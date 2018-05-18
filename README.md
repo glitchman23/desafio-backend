@@ -2,42 +2,51 @@
 
 ## Considerações sobre as estratégias utilizadas
 
-	Segue a abordagem que utilizei para priorizar os atendimentos
+Segue a abordagem que utilizei para priorizar os atendimentos
 
 ## Parâmetros de análise: Em ordem de prioridade
-	- Último personagem a interagir
-	- Palavras-chave no texto da última interação
-	- Palavras-chave no assunto da primeira interação
-	- Sentimento no texto da última interação
-	- Sentimento no texto da primeira interação
+- Último personagem a interagir
+- Palavras-chave no texto da última interação
+- Palavras-chave no assunto da primeira interação
+- Sentimento no texto da última interação
+- Sentimento no texto da primeira interação
 
 ### Implementações previstas
-	- Últimas emoções nas interações do cliente com a empresa
+- Últimas emoções nas interações do cliente com a empresa
 
 ### Evolução do algoritmo 
-	- Uso de dados massivos para criar funções dinâmicas que melhor representem o peso das prioridades de maneira mais assertiva
+- Uso de dados massivos para criar funções dinâmicas que melhor representem o peso das prioridades de maneira mais assertiva
 
 ### Melhorias no código
-	- Reescrever a classe TicketsSorter, simplificando e mergindo as funções no arquivo obj_filters.py
-	- Examinar bibliotecas em uso e criar ambiente enxuto
+- Reescrever a classe TicketsSorter, simplificando e mergindo as funções no arquivo obj_filters.py
+- Examinar bibliotecas em uso e criar ambiente enxuto
 
 ## Ambiente de desenvolvimento
 
-	Linguagem: Python 3.6.5 :: Anaconda, Inc.
-	Framework para API: Bottle v0.12.13
-	Enviroment: Miniconda (olhar o arquivo spec-file.txt)
+- Linguagem: Python 3.6.5 :: Anaconda, Inc.
+- Framework para API: Bottle v0.12.13
+- Enviroment: Miniconda (olhar o arquivo spec-file.txt)
 
 ## Instruções de uso da API
 
 ### Para solicitar os json's dos tickets temos:
 
-	Todos		/tickets.json
-	Por ID		/ticket/<ID>.json
+Todos
+
+	/tickets.json
+Por ID
+
+	/ticket/<ID>.json
 
 ### Para acessar as views
 		
-	Todos		/tickets
-	Por ID		/ticket/<ID>
+Todos	
+
+	/tickets
+
+Por ID
+
+	/ticket/<ID>
 
 ### Para organizar e filtrar
 
@@ -48,7 +57,7 @@
 Ex:
 
 	/tickets.json?filter_by=Alta
-	Retorna todos os tickets com prioridade alta										
+Retorna todos os tickets com prioridade alta										
 
 #### order_by
 	"ID", "rating", "created", "updated" 
@@ -57,7 +66,7 @@ Ex:
 Ex:	
 
 	/tickets.json?order_by=rating
-	Retorn os tickets organizados por rating descendente (mais prioritário para menos prioritário)
+Retorn os tickets organizados por rating descendente (mais prioritário para menos prioritário)
 
 #### page
 	Número da página
@@ -66,11 +75,11 @@ Ex:
 Ex:
 
 	/tickets.json?page=1							
-	Retorna os 5 tickets por página
+Retorna os 5 tickets por página
 
 #### start
 	"Y-m-d H:M:S"
-	Default: '1900-01-01 00:00:00'
+Default: '1900-01-01 00:00:00'
 
 Ex:
 
