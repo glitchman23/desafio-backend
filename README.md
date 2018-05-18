@@ -11,7 +11,7 @@
 	- Sentimento no texto da última interação
 	- Sentimento no texto da primeira interação
 
-### Implementações previstas:
+### Implementações previstas
 	- Últimas emoções nas interações do cliente com a empresa
 
 ### Evolução do algoritmo 
@@ -34,12 +34,12 @@
 	Todos		/tickets.json
 	Por ID		/ticket/<ID>.json
 
-### Para acessar as views:
+### Para acessar as views
 		
 	Todos		/tickets
 	Por ID		/ticket/<ID>
 
-### Para organizar e filtrar (elas podem ser usadas juntas ou independentes)
+### Para organizar e filtrar
 
 #### filter_by
 	Possíveis parâmetros: "Alta", "Normal" 
@@ -71,18 +71,19 @@
 
 	Ex:
 	/tickets.json?start=1988-10-09%2000:00:00
-	Tickets com a data de criação a partir de 1988-10-09 00:00:00
+	Retorn os tickets com a data de criação a partir de 1988-10-09 00:00:00
 
 #### end
 	"Y-m-d H:M:S"
 	Default: '2100-01-01 00:00:00'
 
 	/tickets.json?end=2100-01-01%2000:00:00
-	Tickets com a data de criação até 2100-01-01 00:00:00
+	Retorn os tickets com a data de criação até 2100-01-01 00:00:00
 
 ## OBS
 
 Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em:
+	
 	main.py
 	@route('/static/<filename>')
 	def server_static(filename):
