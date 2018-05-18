@@ -4,7 +4,7 @@ from bottle import run, get, route, request, response, template, static_file
 
 @route('/static/<filename>')
 def server_static(filename):
-    return static_file(filename, root='/home/glitchman/dev/desafioneo/static/')
+    return static_file(filename, root='/home/glitchman/dev/desafio_neo/static/')
 
 @get('/')
 def index():
@@ -15,8 +15,8 @@ def tickets_json():
     filter_by = request.query.filter_by
     order_by = request.query.order_by
     page = request.query.page
-    interval1 = request.query.interval1
-    interval2 = request.query.interval2
+    interval1 = request.query.start
+    interval2 = request.query.end
     return order_filter(tickets_list_up, filter_by, order_by, page, interval1, interval2)
 
 

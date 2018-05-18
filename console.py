@@ -3,10 +3,10 @@ from obj_filters import TicketsSorter
 from datetime import datetime
 import json
 
-with open('desafio-backend/tickets.json', 'r+') as file:
+with open('tickets.json', 'r+') as file:
 	tickets_list = json.load(file)
 
-with open('desafio-backend/tickets_updated.json', 'r+') as file:
+with open('tickets_updated.json', 'r+') as file:
 	tickets_list_up = json.load(file)
 
 

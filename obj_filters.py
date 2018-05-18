@@ -3,7 +3,7 @@ from json_worker import JsonObj
 from bottle import request
 from datetime import datetime
 
-with open('desafio-backend/tickets_updated.json', 'r+') as file:
+with open('tickets_updated.json', 'r+') as file:
     tickets_list_up = json.load(file)
 
 class TicketsSorter(object):
@@ -17,7 +17,7 @@ class TicketsSorter(object):
 
         format = "%Y-%m-%d %H:%M:%S"
         if interval1 == '' or interval2 == '':
-            interval1 = '1988-10-09 00:00:00'
+            interval1 = '1900-01-01 00:00:00'
             interval2 = '2100-01-01 00:00:00'
 
         datetime_object1 = datetime.strptime(interval1, format)

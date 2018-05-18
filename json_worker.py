@@ -59,5 +59,5 @@ class JsonObj(object):
 			Prioriser(ticket).priority_setter()
 			json_new.append(ticket.__dict__)
 
-		with open('desafio-backend/tickets_updated.json', 'w') as outfile:
+		with open('tickets_updated.json', 'w') as outfile:
 		    json.dump(json_new, outfile, ensure_ascii=False, indent=2)
