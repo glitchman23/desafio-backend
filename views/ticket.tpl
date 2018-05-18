@@ -26,8 +26,8 @@
 				<h4>Mensagem: </h4>{{ ticket["Interactions"][i]["Message"] }}<br><br>
 			</div>
 			% end
-		<a href="#" class="previous">&laquo; Anterior</a>
-		<a href="#" class="next">Próximo &raquo;</a>
+		<a href="/ticket/{{ ticket["TicketID"] - 1 }}" class="previous">&laquo; Anterior</a>
+		<a href="/ticket/{{ ticket["TicketID"] + 1 }}" class="next">Próximo &raquo;</a>
 		</section>
 </body>
 </html>

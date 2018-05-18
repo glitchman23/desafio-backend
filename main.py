@@ -4,7 +4,7 @@ from bottle import run, get, route, request, response, template, static_file
 
 @route('/static/<filename>')
 def server_static(filename):
-    return static_file(filename, root='/home/glitchman/dev/desafio_neo/static/')
+    return static_file(filename, root='/home/glitchman/dev/desafio_neo/desafio-backend/static/')
 
 @get('/')
 def index():
