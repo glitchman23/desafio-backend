@@ -1,13 +1,13 @@
-# Considerações sobre as estratégias utilizadas
+## Considerações sobre as estratégias utilizadas
 
-Segue a abordagem que utilizei para priorizar os atendimentos
+	Segue a abordagem que utilizei para priorizar os atendimentos''
 
 ## Parâmetros de análise: Em ordem de prioridade
 	- Último personagem a interagir
-	- Palavras-chave no assunto da primeira interação
 	- Palavras-chave no texto da última interação
-	- Sentimento no texto da primeira interação
+	- Palavras-chave no assunto da primeira interação
 	- Sentimento no texto da última interação
+	- Sentimento no texto da primeira interação
 
 ### Implementações previstas:
 	- Últimas emoções nas interações do cliente com a empresa
@@ -25,51 +25,51 @@ Segue a abordagem que utilizei para priorizar os atendimentos
 
 ### Para solicitar os json's dos tickets temos:
 
-		Todos		/tickets.json
-		Por ID		/ticket/<ID>.json
+	Todos		/tickets.json
+	Por ID		/ticket/<ID>.json
 
 ### Para acessar as views:
 		
-		Todos		/tickets
-		Por ID		/ticket/<ID>
+	Todos		/tickets
+	Por ID		/ticket/<ID>
 
 ### Para organizar e filtrar (elas podem ser usadas juntas ou independentes)
 
 #### filter_by
-Possíveis parâmetros: "Alta", "Normal" 
-Default: None (sem filtros)
+	Possíveis parâmetros: "Alta", "Normal" 
+	Default: None (sem filtros)
 
-Ex:
-/tickets.json?filter_by=Alta
-Retorna todos os tickets com prioridade alta										
+	Ex:
+	/tickets.json?filter_by=Alta
+	Retorna todos os tickets com prioridade alta										
 
 #### order_by
-"ID", "rating", "created", "updated" 
-Default: "ID"
+	"ID", "rating", "created", "updated" 
+	Default: "ID"
 
-Ex:		
-/tickets.json?order_by=rating
-Retorn os tickets organizados por rating descendente (mais prioritário para menos prioritário)
+	Ex:		
+	/tickets.json?order_by=rating
+	Retorn os tickets organizados por rating descendente (mais prioritário para menos prioritário)
 
 #### page
-Número da página
-Default: page=0 (Retona todos os tickets)
+	Número da página
+	Default: page=0 (Retona todos os tickets)
 
-Ex:
-/tickets.json?page=1							
-Retorna os 5 tickets por página
+	Ex:
+	/tickets.json?page=1							
+	Retorna os 5 tickets por página
 
 #### start
-"Y-m-d H:M:S"
-Default: '1900-01-01 00:00:00'
+	"Y-m-d H:M:S"
+	Default: '1900-01-01 00:00:00'
 
-Ex:
-/tickets.json?start=1988-10-09%2000:00:00
-Tickets com a data de criação a partir de 1988-10-09 00:00:00
+	Ex:
+	/tickets.json?start=1988-10-09%2000:00:00
+	Tickets com a data de criação a partir de 1988-10-09 00:00:00
 
 #### end
-"Y-m-d H:M:S"
-Default: '2100-01-01 00:00:00'
+	"Y-m-d H:M:S"
+	Default: '2100-01-01 00:00:00'
 
-/tickets.json?end=2100-01-01%2000:00:00
-Tickets com a data de criação até 2100-01-01 00:00:00
+	/tickets.json?end=2100-01-01%2000:00:00
+	Tickets com a data de criação até 2100-01-01 00:00:00
