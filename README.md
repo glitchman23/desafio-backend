@@ -1,6 +1,8 @@
+# Priorisador de tickets e API
+
 ## Considerações sobre as estratégias utilizadas
 
-	Segue a abordagem que utilizei para priorizar os atendimentos''
+	Segue a abordagem que utilizei para priorizar os atendimentos
 
 ## Parâmetros de análise: Em ordem de prioridade
 	- Último personagem a interagir
@@ -73,3 +75,10 @@
 
 	/tickets.json?end=2100-01-01%2000:00:00
 	Tickets com a data de criação até 2100-01-01 00:00:00
+
+## OBS
+	Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em:
+	main.py
+	@route('/static/<filename>')
+	def server_static(filename):
+    	return static_file(filename, root='/path/to/directory/static/')
