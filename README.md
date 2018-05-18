@@ -45,7 +45,8 @@
 	Possíveis parâmetros: "Alta", "Normal" 
 	Default: None (sem filtros)
 
-	Ex:
+Ex:
+
 	/tickets.json?filter_by=Alta
 	Retorna todos os tickets com prioridade alta										
 
@@ -53,7 +54,8 @@
 	"ID", "rating", "created", "updated" 
 	Default: "ID"
 
-	Ex:		
+Ex:	
+
 	/tickets.json?order_by=rating
 	Retorn os tickets organizados por rating descendente (mais prioritário para menos prioritário)
 
@@ -61,7 +63,8 @@
 	Número da página
 	Default: page=0 (Retona todos os tickets)
 
-	Ex:
+Ex:
+
 	/tickets.json?page=1							
 	Retorna os 5 tickets por página
 
@@ -69,22 +72,24 @@
 	"Y-m-d H:M:S"
 	Default: '1900-01-01 00:00:00'
 
-	Ex:
+Ex:
+
 	/tickets.json?start=1988-10-09%2000:00:00
-	Retorn os tickets com a data de criação a partir de 1988-10-09 00:00:00
+Retorna os tickets com a data de criação a partir de 1988-10-09 00:00:00
 
 #### end
 	"Y-m-d H:M:S"
 	Default: '2100-01-01 00:00:00'
 
+Ex:
+
 	/tickets.json?end=2100-01-01%2000:00:00
-	Retorn os tickets com a data de criação até 2100-01-01 00:00:00
+Retorna os tickets com a data de criação até 2100-01-01 00:00:00
 
 ## OBS
 
-Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em:
-	
-	main.py
+Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em: main.py
+
 	@route('/static/<filename>')
 	def server_static(filename):
     	return static_file(filename, root='/path/to/directory/static/')
