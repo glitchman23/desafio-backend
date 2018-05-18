@@ -17,6 +17,10 @@
 ### Evolução do algoritmo 
 	- Uso de dados massivos para criar funções dinâmicas que melhor representem o peso das prioridades de maneira mais assertiva
 
+### Melhorias no código
+	- Reescrever a classe TicketsSorter, simplificando e mergindo as funções no arquivo obj_filters.py
+	- Examinar bibliotecas em uso e criar ambiente enxuto
+
 ## Ambiente de desenvolvimento
 
 	Linguagem: Python 3.6.5 :: Anaconda, Inc.
@@ -77,7 +81,8 @@
 	Tickets com a data de criação até 2100-01-01 00:00:00
 
 ## OBS
-	Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em:
+
+Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em:
 	main.py
 	@route('/static/<filename>')
 	def server_static(filename):
