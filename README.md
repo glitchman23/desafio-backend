@@ -17,9 +17,9 @@ Segue a abordagem que utilizei para priorizar os atendimentos
 
 ## Ambiente de desenvolvimento
 
-Linguagem: Python 3.6.5 :: Anaconda, Inc.
-Framework para API: Bottle v0.12.13
-Enviroment: Miniconda (olhar o arquivo spec-file.txt)
+	Linguagem: Python 3.6.5 :: Anaconda, Inc.
+	Framework para API: Bottle v0.12.13
+	Enviroment: Miniconda (olhar o arquivo spec-file.txt)
 
 ## Instruções de uso da API
 
@@ -33,7 +33,7 @@ Enviroment: Miniconda (olhar o arquivo spec-file.txt)
 		Todos		/tickets
 		Por ID		/ticket/<ID>
 
-###Paga organizar e filtrar (elas podem ser usadas juntas ou independentes)
+### Para organizar e filtrar (elas podem ser usadas juntas ou independentes)
 
 #### filter_by
 Possíveis parâmetros: "Alta", "Normal" 
