@@ -16,9 +16,10 @@ class TicketsSorter(object):
     def created_interval(self, interval1 = '', interval2 = '' ):
 
         format = "%Y-%m-%d %H:%M:%S"
-        if interval1 == '' or interval2 == '':
+        if interval1 == '':
             interval1 = '1900-01-01 00:00:00'
-            interval2 = '2100-01-01 00:00:00'
+        if interval2 == '':
+            interval2 = '2100-01-01 00:00:00'    
 
         datetime_object1 = datetime.strptime(interval1, format)
         datetime_object2 = datetime.strptime(interval2, format)
