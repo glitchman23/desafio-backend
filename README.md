@@ -93,7 +93,7 @@ Retorna os tickets com a data de criação até 2100-01-01 00:00:00
 
 ## OBS
 
-Para invocar o arquivo estático om o css colocar o caminho absoluto até o arquivo em: main.py
+Para invocar o arquivo estático com o css colocar o caminho absoluto até o arquivo em: main.py
 
 	@route('/static/<filename>')
 	def server_static(filename):
