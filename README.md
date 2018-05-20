@@ -1,9 +1,5 @@
 # Priorisador de tickets e API
 
-## Considerações sobre as estratégias utilizadas
-
-Segue a abordagem que utilizei para priorizar os atendimentos
-
 ## Parâmetros de análise: Em ordem de prioridade
 - Último personagem a interagir
 - Palavras-chave no texto da última interação
