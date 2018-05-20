@@ -1,5 +1,5 @@
 from obj_filters import TicketsSorter, order_filter, tickets_list_up
-from bottle import run, get, route, request, response, template, static_file
+from bottle import run, get, route, request, template, static_file
 
 
 @route('/static/<filename>')
@@ -37,8 +37,8 @@ def get_tickets():
     filter_by = request.query.filter_by
     order_by = request.query.order_by
     page = request.query.page
-    interval1 = request.query.interval1
-    interval2 = request.query.interval2
+    interval1 = request.query.start
+    interval2 = request.query.end
     temp = order_filter(tickets_list_up, filter_by, order_by, page, interval1, interval2)
     return template('tickets', tickets=temp['tickets'])
 
